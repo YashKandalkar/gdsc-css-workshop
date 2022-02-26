@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descendant Selctor</title>
+    <style>
+      div p {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Examples from w3schools -->
+    <h2>Descendant Selector <code>div p</code></h2>
+
+    <p>
+      The descendant selector matches all elements that are descendants of a
+      specified element.
+    </p>
+
+    <div>
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <section><p>Paragraph 3 in the div.</p></section>
+
+      <article>
+        <p>Paragraph inside article</p>
+      </article>
+    </div>
+
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+
+    <hr />
+
+    <h2>
+      <a href="/child-selector.html" target="_blank">Child Selector</a>
+      <code>div > p</code>
+    </h2>
+
+    <hr />
+
+    <h2>
+      <a href="/adjacent-sibling-selector.html" target="_blank"
+        >Adjacent Sibling Selector</a
+      >
+      <code>div + p</code>
+    </h2>
+
+    <hr />
+
+    <h2>
+      <a href="/general-sibling-selector.html" target="_blank"
+        >General Sibling Selector</a
+      >
+      <code>div ~ p</code>
+    </h2>
+  </body>
+</html>

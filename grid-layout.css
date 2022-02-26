@@ -1,0 +1,45 @@
+nav {
+  grid-area: nav;
+  background-color: #0453bb;
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+  background-color: #bbb804;
+  padding: 10px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #888;
+  padding: 10px;
+}
+
+main {
+  grid-area: main;
+  background-color: tomato;
+  padding: 10px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #04bb3b;
+  padding: 10px;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav"
+    "sidebar header header"
+    "sidebar main main"
+    "footer footer footer";
+
+  grid-template-rows: 50px 100px 1fr 100px;
+  grid-template-columns: 350px 1fr 1fr;
+
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}

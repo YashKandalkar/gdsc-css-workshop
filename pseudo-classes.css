@@ -1,0 +1,32 @@
+form {
+  border: 1px solid;
+  color: gray;
+  padding: 4px;
+}
+
+form:focus-within {
+  background: #ff8;
+  color: black;
+}
+
+input {
+  margin: 4px;
+}
+
+#div-to-hover {
+  background: lime;
+  border: 1px solid;
+  padding: 4px;
+}
+
+#div-to-hover:hover {
+  background: tomato;
+}
+
+button:focus {
+  background: #77aeff;
+}
+
+button:active {
+  background: #fce040;
+}

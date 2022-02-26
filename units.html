@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Units</title>
+    <style>
+      body > div:nth-child(1) {
+        background-color: #f00;
+        width: 200px;
+        height: 200px;
+      }
+      body > div:nth-child(2) {
+        background-color: #0f0;
+        width: 50vw;
+        height: 200px;
+      }
+      body > div:nth-child(3) {
+        background-color: #00f;
+        width: 200px;
+        height: 50vh;
+      }
+      body > div:nth-child(4) {
+        background-color: #f0f;
+        width: 30vmin;
+        height: 200px;
+      }
+      body > div:nth-child(5) {
+        background-color: #ff0;
+        width: 30vmax;
+        height: 200px;
+      }
+
+      html {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Absolute Length</div>
+    <div>Relative Length (vw)</div>
+    <div>Relative Length (vh)</div>
+    <div>Relative Length (vmin)</div>
+    <div>Relative Length (vmax)</div>
+
+    <hr />
+
+    <div style="font-size: 16px">
+      Text 1 (16px font size)
+      <p style="font-size: 2em">Text 2 (2em = 32px font size)</p>
+    </div>
+
+    <hr />
+
+    <div style="font-size: 1rem">
+      Text 1 (1rem = 16px font size)
+      <div style="font-size: 2rem">
+        Text 2 (2rem = 32px font size)
+        <p style="font-size: 3rem">Text 3 (3rem = 48px font size)</p>
+      </div>
+    </div>
+  </body>
+</html>
